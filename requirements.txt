@@ -1,10 +1,30 @@
-PyMuPDF==1.23.8
-openai==1.12.0
-faiss-cpu==1.7.4
-numpy==1.26.4
+# PDF Processing
+PyMuPDF==1.23.8  # for PDF text extraction
+
+# OpenAI Integration
+openai==1.12.0  # for embeddings and summarization
+
+# Vector Database
+faiss-cpu==1.7.4  # for similarity search
+numpy==1.26.4  # required by faiss
+
+# Machine Learning & Training
+torch==2.2.0  # for custom model training
+transformers==4.37.2  # for Hugging Face models
+scikit-learn==1.4.0  # for data splitting and metrics
+sentence-transformers==2.5.1  # for embedding models
+
+# Utilities
+python-dotenv==1.0.1  # for environment variable management
+tqdm==4.66.2  # for progress bars
+loguru==0.7.2  # for better logging
+pyyaml==6.0.1  # for configuration management
+
+# Visualization
+graphviz==0.20.1
 matplotlib==3.8.3
 seaborn==0.13.2
-graphviz==0.20.1
-pyyaml==6.0.1
-loguru==0.7.2
-python-dotenv==1.0.1 
+
+# Testing
+pytest==8.0.2
+pytest-cov==4.1.0 
