@@ -1,0 +1,30 @@
+# Distiller Configuration
+
+# Text Processing
+chunk_size: 500
+overlap: 50
+
+# Models
+summarization:
+  model: "gpt-4"
+  max_tokens: 1000
+  temperature: 0.7
+
+embedding:
+  model: "text-embedding-ada-002"
+  dimensions: 1536
+
+# Retrieval
+faiss:
+  metric: "cosine"
+  index_type: "FlatL2"
+  k: 3
+
+# Paths
+input_dir: "data"
+output_dir: "outputs"
+pdf_file: "data/combinatorics-bona.pdf"
+
+# Logging
+log_level: "INFO"
+log_file: "outputs/distiller.log" 
