@@ -9,7 +9,7 @@ faiss-cpu==1.7.4  # for similarity search
 numpy==1.26.4  # required by faiss
 
 # Machine Learning & Training
-torch==2.2.0  # for custom model training
+torch==2.6.0  # for custom model training
 transformers==4.37.2  # for Hugging Face models
 scikit-learn==1.4.0  # for data splitting and metrics
 sentence-transformers==2.5.1  # for embedding models
